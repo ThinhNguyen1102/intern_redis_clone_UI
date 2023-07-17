@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header__nav navbar navbar-expand-lg ps-2 pe-2 ps-md-5 pe-md-5"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/images/Logo-redis.svg.png"
+              alt="redis logo"
+              class="nav__logo"
+          /></a>
+          <button
+            class="nav__button-toggle navbar-toggler btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="nav__menu-icon fa-solid fa-bars"></i>
+          </button>
+          <div class="nav__content collapse navbar-collapse" id="navbarNav">
+            <ul class="nav__link-group navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GET STARTED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DOCS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COMMANDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESOURCES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COMMUNITY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUPPORT</a>
+              </li>
+            </ul>
+
+            <div
+              class="nav__content--right d-flex flex-column align-items-start flex-lg-row pt-3 pt-lg-0"
+            >
+              <form class="nav__form d-flex" role="search">
+                <input
+                  class="form__input-search form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="nav__btn btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <button class="nav__btn btn">Download</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="main__overview row">
+        <div
+          class="overview__quickview col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center pb-5 pt-5 mt-5 mt-lg-0 p-lg-5"
+        >
+          <h1 class="overview__title display-1 text--bold">Redis</h1>
+          <p class="overview__des text-center text-lg-start">
+            The open source, in-memory data store used by millions of developers
+            as a database, cache, streaming engine, and message broker.
+          </p>
+          <div class="quickview__btn-box d-flex">
+            <button class="quickview__get-started main-btn btn p-3 pe-5 ps-5">
+              Get Started
+            </button>
+            <button
+              class="quickview__docs main-btn btn--outline btn btn-outline-dark p-3 pe-5 ps-5"
+            >
+              Read the docs
+            </button>
+          </div>
+        </div>
+        <div class="overview__quick-cmd col-lg-6 d-flex align-items-center">
+          <pre class="quick-cmd__block p-4 shadow">
+            <div class="line"></div>
+<code class="quick-cmd__cmd">redis> PING
+"PONG"
+redis> HSET user:1 name antirez vocation artist
+(integer) 2
+redis> SET e 2.71
+"OK"
+redis> INCRBYFLOAT e 0.43
+"3.14"
+redis> RENAME e pi
+"OK"
+redis></code>
+          </pre>
+        </div>
+      </section>
+
+      <section
+        class="main__achievement row d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="achievement__wrapper col-12 d-flex flex-column">
+          <h2 class="achievement__title text-center">
+            A vibrant, open source database
+          </h2>
+          <p
+            class="achievement__des text-center d-flex flex-column align-items-center"
+          >
+            Voted the most-loved database for 5 years running, Redis is at the
+            center of an engaged community of developers, architects, and open
+            source contributors.
+          </p>
+          <div
+            class="achievement__card-box d-flex flex-column justify-content-center align-items-center flex-lg-row"
+          >
+            <div
+              class="card__item d-flex flex-column justify-content-center align-items-center card shadow"
+            >
+              <h5 class="card__title">4B+</h5>
+              <p class="card__text">Docker pulls</p>
+            </div>
+            <div
+              class="card__item d-flex flex-column justify-content-center align-items-center card shadow"
+            >
+              <h5 class="card__title">50K+</h5>
+              <p class="card__text">Github stars</p>
+            </div>
+            <div
+              class="card__item d-flex flex-column justify-content-center align-items-center card shadow"
+            >
+              <h5 class="card__title">50+</h5>
+              <p class="card__text text-center">
+                Supported programing languages
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__core row d-flex flex-column align-items-center">
+        <h2 class="core__title text-center">Core capabilities</h2>
+        <div
+          class="core__feature-box container-fluid d-flex flex-wrap justify-content-center justify-content-md-between"
+        >
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">In-memory data structures</h2>
+            <p class="feature__text">
+              Well-known as a "data structure server", with support for strings,
+              hashes, lists, sets, sorted sets, streams, and more.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">Programmability</h2>
+            <p class="feature__text">
+              Server-side scripting with Lua and server-side stored procedures
+              with Redis Functions.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">Extensibility</h2>
+            <p class="feature__text">
+              A module API for building custom extensions to Redis in C, C++,
+              and Rust.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">Persistence</h2>
+            <p class="feature__text">
+              Keeps the dataset in memory for fast access, but can also persist
+              all writes to permanent storage to survive reboots and system
+              failures.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">Clustering</h2>
+            <p class="feature__text">
+              Horizontal scalability with hash-based sharding, scaling to
+              millions of nodes with automatic re-partitioning when growing the
+              cluster.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+          <div
+            class="core__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <i class="fa-solid fa-database"></i>
+            <h2 class="feature__title">High availability</h2>
+            <p class="feature__text">
+              Replication with automatic failover for both standalone and
+              clustered deployments.
+            </p>
+            <a href="#" class="feature__link">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="main__stack row d-flex flex-column align-items-center justify-content-center"
+      >
+        <div
+          class="stack__title-box d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-layer-group"></i>
+          <div class="stack__title-text">Redis Stack</div>
+        </div>
+        <p class="stack__description text-center">
+          Redis Stack extends Redis with modern data models and processing
+          engines to provide a complete developer experience. Download the
+          source, install using your favorite package manager, or spin it up for
+          free in the cloud.
+        </p>
+        <div
+          class="stack__card-box d-flex flex-column flex-md-row align-items-center justify-content-center"
+        >
+          <div
+            class="stack__card-item card d-flex align-items-center justify-content-start shadow align-self-stretch"
+          >
+            <i class="fa-solid fa-server"></i>
+            <p>
+              Redis Stack Server lets you build applications with searchable
+              JSON and time series data models, and extended probabilistic data
+              structures.
+            </p>
+          </div>
+          <div
+            class="stack__card-item card d-flex align-items-center justify-content-start shadow align-self-stretch"
+          >
+            <i class="fa-solid fa-server"></i>
+            <p>
+              Get productive quickly with the Redis Stack object mapping and
+              client libraries.
+            </p>
+          </div>
+        </div>
+        <div
+          class="stack__button-box d-flex justify-content-center align-items-center"
+        >
+          <button class="stack__download main-btn btn p-3 pe-5 ps-5">
+            Download Stack
+          </button>
+          <button
+            class="stack__learn-more main-btn btn--outline btn btn-outline-dark p-3 pe-5 ps-5"
+          >
+            Learn more
+          </button>
+        </div>
+      </section>
+
+      <section class="main__usecase row d-flex flex-column align-items-center">
+        <h2 class="usecase__title text-center">Redis Stack use cases</h2>
+        <div
+          class="usecase__feature-box container-fluid d-flex flex-wrap justify-content-center justify-content-md-between"
+        >
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">In-memory data structures</h2>
+            <p class="feature__text">
+              Well-known as a "data structure server", with support for strings,
+              hashes, lists, sets, sorted sets, streams, and more.
+            </p>
+          </div>
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">Programmability</h2>
+            <p class="feature__text">
+              Server-side scripting with Lua and server-side stored procedures
+              with Redis Functions.
+            </p>
+          </div>
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">Extensibility</h2>
+            <p class="feature__text">
+              A module API for building custom extensions to Redis in C, C++,
+              and Rust.
+            </p>
+          </div>
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">Persistence</h2>
+            <p class="feature__text">
+              Keeps the dataset in memory for fast access, but can also persist
+              all writes to permanent storage to survive reboots and system
+              failures.
+            </p>
+          </div>
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">Clustering</h2>
+            <p class="feature__text">
+              Horizontal scalability with hash-based sharding, scaling to
+              millions of nodes with automatic re-partitioning when growing the
+              cluster.
+            </p>
+          </div>
+          <div
+            class="usecase__feature-item d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="feature__title">High availability</h2>
+            <p class="feature__text">
+              Replication with automatic failover for both standalone and
+              clustered deployments.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer container-fluid d-flex justify-content-center align-items-center"
+    >
+      <p class="footer__content">
+        This is a community website sponsored by <span>Redis Ltd.</span> © 2023.
+        Redis and the cube logo are registered trademarks of Redis Ltd.
+        <span>Terms of use & privacy policy.</span>
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

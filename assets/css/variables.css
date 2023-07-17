@@ -1,0 +1,13 @@
+:root {
+  --color-white-blue-light: #f5f6fa;
+  --color-white: white;
+  --color-gray: rgb(127 143 166);
+  --color-white-gray: #2f3640;
+  --color-main: #5961ff;
+  --color-main-light: #6970fa;
+  --color-dark: #0f172a;
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(238 242 255 / 0.3),
+    var(--tw-gradient-to, rgb(238 242 255 / 0));
+  --tw-gradient-from: rgba(235, 240, 255, 0.436);
+  --tw-gradient-to: #fff;
+}

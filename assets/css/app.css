@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-white-blue-light);
+}
+
+.main-btn {
+  background-color: var(--color-main-light);
+  min-height: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  transition: all 0.2s linear;
+  color: white;
+}
+
+.main-btn:hover {
+  background-color: var(--color-main);
+  color: white;
+}
+
+.btn--outline {
+  color: black;
+  background-color: transparent;
+}
+
+.btn--outline:hover {
+  color: var(--color-main);
+  background-color: transparent;
+}
+
+.text--bold {
+  font-weight: 500;
+}
+
+.line {
+  border-bottom: 0.5px solid rgba(127, 143, 166, 0.5);
+}
+
+.card__item {
+  height: 14rem;
+  width: 21rem;
+}

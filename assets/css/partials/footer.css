@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--color-dark);
+  min-height: 6rem;
+}
+
+.footer__content {
+  color: var(--color-gray);
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.footer__content span {
+  color: white;
+  font-weight: 500;
+}

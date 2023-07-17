@@ -1,0 +1,208 @@
+.main {
+  margin-top: 5rem;
+}
+
+.main__overview {
+  height: 70vh;
+}
+
+.overview__quickview {
+  gap: 1rem;
+}
+
+.quickview__btn-box {
+  gap: 1rem;
+}
+
+.quick-cmd__block {
+  background-color: var(--color-dark);
+  color: white;
+  width: 100%;
+  font-size: 1.6rem;
+  height: fit-content;
+  border-radius: 2rem;
+}
+
+.overview__title {
+  font-size: 6.4rem;
+}
+
+.overview__des {
+  font-size: 2rem;
+}
+
+.main__achievement {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.achievement__wrapper {
+  gap: 1.6rem;
+  max-width: 80rem;
+}
+
+.achievement__title {
+  font-size: 3.6rem;
+}
+
+.achievement__des {
+  font-size: 2rem;
+  color: rgb(58, 58, 58);
+}
+
+.achievement__card-box {
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card__item {
+  border-radius: 1rem;
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.card__title {
+  font-weight: 500;
+  color: rgb(45, 212, 191);
+  font-size: 5rem;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.main__usecase {
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.usecase__feature-box,
+.core__feature-box {
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.usecase__feature-item,
+.core__feature-item {
+  width: calc(90% / 3);
+  /* padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.usecase__title,
+.core__title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.usecase__feature-item,
+.core__feature-item {
+  gap: 1rem;
+}
+
+.usecase__feature-item i,
+.core__feature-item i {
+  font-size: 3rem;
+  color: var(--color-main);
+}
+
+.feature__title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.feature__text {
+  font-size: 1.4rem;
+  min-height: 7rem;
+}
+
+.feature__link {
+  font-size: 1.6rem;
+}
+
+.main__stack {
+  max-width: 80rem;
+  margin: auto;
+  gap: 4rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.stack__title-box * {
+  font-size: 3.6rem;
+}
+
+.stack__title-text {
+  font-weight: 500;
+}
+.stack__title-box {
+  gap: 1rem;
+  height: 80%;
+}
+
+.stack__description {
+  padding: 0 4rem;
+  font-size: 1.8rem;
+}
+
+.stack__card-box {
+  gap: 2rem;
+}
+
+.stack__card-item {
+  flex: 1;
+  min-height: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.stack__card-item i {
+  font-size: 10rem;
+  color: var(--color-main);
+}
+
+.stack__card-item p {
+  font-size: 1.6rem;
+}
+
+.stack__button-box {
+  gap: 2rem;
+}
+
+.usecase__feature-item {
+  border-top: 2px solid var(--color-main);
+}
+
+@media only screen and (max-width: 1270px) {
+  .usecase__feature-item,
+  .core__feature-item {
+    width: calc(90% / 2);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .usecase__feature-item,
+  .core__feature-item {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main__overview {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main__overview {
+    margin-top: 10rem;
+  }
+}
